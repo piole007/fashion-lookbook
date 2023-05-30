@@ -1,4 +1,97 @@
 * {
-    margin: none;
-    padding: none
+    margin: 0;
+    padding: 0;
 }
+
+.nav-bar {
+    height: 10rem;
+    background-color: #DDBEA9;
+}
+
+.main-section {
+    display: flex;
+    width: 80%;
+    /* I set width 100%, not 100vw, because:
+    100vw causes horizontal overflow, because of the vertical scrollbar which up some of that space. 
+    However percentages don’t include the width of the scrollbar, so it will automatically fit.  */
+    height: 85%;
+    background-color: transparent;
+    padding: 5% 10%;
+    column-gap: 5%;  
+}
+
+.main-section_heading h1 {
+    padding-top: 5%;
+    background-color: transparent;
+    font-family: "Bodoni Moda";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    line-height: 70px;
+    color: #4C4F42
+}
+.main-section_heading p {
+    padding-top: 5%;
+    font-family: "Lexend";
+    font-size: 20px;
+    line-height: 45px;
+    color: #6B705C
+}
+
+.main-section_choose-season {
+    padding-top: 3%;
+}
+.main-section_choose-season_arrow {
+    padding-left: 5%;
+    color: #4C4F42
+}
+.main-section_heading h3 {
+    padding-top: 5%;
+    font-family: "Bodoni Moda";
+    font-style: italic;
+    font-size: 30px;
+    line-height: 45px;
+    color: #4C4F42;
+    display: inline    
+}
+
+.main-section_heading_anchor-wrapper {
+    display: flex;
+    margin-top: 35px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    
+}
+.main-section_heading_anchor-wrapper button {
+    text-decoration: none;
+    font-family: "Lexend";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 45px;
+    color: #6B705C;
+    text-align: center;
+    cursor:pointer;
+    border: none;
+    background: none;
+    background-image: url('/Project-No-1_Fashion-Lookbook/pink-paint-brush-stroke-lighter.png');
+    background-size: cover;
+    width: 250px;
+    height: 60px;
+}
+
+.main-section_photo img {
+    border-radius: 45%;
+    height: 70%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("v546batch3-mynt-32-badgewatercolor.jpg");
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
