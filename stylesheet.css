@@ -16,10 +16,12 @@
   justify-content: space-between;
   padding: 0 2rem;
 }
+
 .nav-bar img {
   height: 6rem;
   padding: 0 0 0 2.5rem;
 }
+
 .nav-bar-menu {
   list-style-type: none;
   margin: 0;
@@ -45,15 +47,14 @@
   /* I set width 100%, not 100vw, because:
     100vw causes horizontal overflow, because of the vertical scrollbar which up some of that space. 
     However percentages don’t include the width of the scrollbar, so it will automatically fit.  */
-  height: 85%;
+  height: 63%;
   background-color: transparent;
-  padding: 5% 10%;
+  padding: 10% 10%;
   column-gap: 5%;
 }
 
 .main-section_heading h1 {
-  /* I increased the top padding from 5% to 15% so that the navigation bar doesn't cover it */
-  padding-top: 15%;
+  padding-top: 5%;
   background-color: transparent;
   font-family: "Bodoni Moda";
   font-weight: bold;
@@ -89,10 +90,12 @@
 
 .main-section_heading_anchor-wrapper {
   display: flex;
+  justify-content: flex-start;
   margin-top: 35px;
   column-gap: 30px;
   flex-wrap: wrap;
   row-gap: 10px;
+  margin-left: -35px;
 }
 .main-section_heading_anchor-wrapper button {
   text-decoration: none;
@@ -105,7 +108,7 @@
   cursor: pointer;
   border: none;
   background: none;
-  background-image: url("/Project-No-1_Fashion-Lookbook/pink-paint-brush-stroke-lighter.png");
+  background-image: url("/Project-No-1_Fashion-Lookbook/pink-paint-brush-stroke.png");
   background-size: cover;
   width: 250px;
   height: 60px;
@@ -113,15 +116,12 @@
 
 .main-section_photo img {
   border-radius: 45%;
-  height: 70%;
-  /* I added the top padding 40% so that the navigation bar doesn't cover the picture */
-
-  padding-top: 40%;
+  height: 90%;
 }
 
 .parallax {
   /* The image used */
-  background-image: url("v546batch3-mynt-32-badgewatercolor.jpg");
+  background-image: url("watercolor-background.jpg");
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -129,55 +129,147 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* fashion pics styling */
 
-#spring-pics,
-#summer-pics,
-#autumn-pics,
-#winter-pics {
+.footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 6rem;
+  justify-content: space-between;
+  width: 80%;
+  height: 15%;
+  background-color: transparent;
+  padding: 5% 10%;
 }
-#spring-pics img,
-#summer-pics img,
-#autumn-pics img,
-#winter-pics img {
-  height: 400px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 50px;
-}
-.season-text {
+
+.social-icons-section {
   display: flex;
+  flex-direction: column;
+
+  width: 40%;
+}
+
+.footer-logo {
+  width: 8rem;
+}
+
+.social-icons-section p {
+  font-family: "Lexend";
+  font-size: 1rem;
+  color: #6b705c;
+  padding: 0 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  height: 40px;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 2px 5px 0 5px;
+}
+
+.social-icons i {
+  color: #cb997e;
+  cursor: pointer;
+}
+
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 300px;
-  font-family: "Lexend";
-  font-size: 5vh;
+  width: 40%;
+  background-color: #ddbea9;
+  border-radius: 90px;
+  row-gap: 10px;
+}
 
-  border-radius: 50px;
-}
-#summer-pics .season-text {
-  background-color: #cb997e;
+.subscribe-section h5 {
+  font-family: "Bodoni Moda";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
   color: #4c4f42;
+  padding: 0 10px;
+  text-align: center;
 }
-#spring-pics .season-text {
-  background-color: #6b705c;
-  color: #ddbea9;
+
+.subscribe-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 20%;
+  background-color: white;
+  border-radius: 90px;
 }
-#autumn-pics .season-text {
+
+.subscribe-button-wrapper input {
+  border: none;
+  margin-left: 10px;
+  width: 50%;
+  font-family: "Lexend";
+  font-style: italic;
+  font-size: 1rem;
+  color: #6b705c;
+}
+.subscribe-button-wrapper button {
+  border: none;
+  margin-right: 5px;
   background-color: #ffe8d6;
+  font-family: "Lexend";
+  font-size: 1rem;
   color: #6b705c;
+  border-radius: 90px;
+  padding: 0 5px;
+  cursor: pointer;
 }
-#winter-pics .season-text {
-  background-color: #a5a58d;
-  color: #6b705c;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
+#spring-pics,
+  #summer-pics,
+  #autumn-pics,
+  #winter-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 6rem;
+  }
+  #spring-pics img,
+  #summer-pics img,
+  #autumn-pics img,
+  #winter-pics img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  .season-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    font-family: "Lexend";
+    font-size: 5vh;
+  
+    border-radius: 50px;
+  }
+  #summer-pics .season-text {
+    background-color: #cb997e;
+    color: #4c4f42;
+  }
+  #spring-pics .season-text {
+    background-color: #6b705c;
+    color: #ddbea9;
+  }
+  #autumn-pics .season-text {
+    background-color: #ffe8d6;
+    color: #6b705c;
+  }
+  #winter-pics .season-text {
+    background-color: #a5a58d;
+    color: #6b705c;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
