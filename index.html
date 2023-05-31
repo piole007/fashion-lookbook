@@ -20,43 +20,63 @@
   </head>
   <body>
     <!-- NAV BAR SECTION -->
-    <div class="nav-bar"></div>
+    <div class="nav-bar">
+      <a href="#start"> <img src="brand-logo.png" alt="logo" /></a>
+      <ul class="nav-bar-menu">
+        <li> <a href="#spring"> Lookbook</a></li>
+        <li> <a href="about-us.html"> About Us</a></li>
+      </ul>
+    </div>
 
     <!-- MAIN SECTION -->
     <div class="parallax">
-    <div class="main-section">
-      <div class="main-section_heading">
-        <h1>Classic Monochrome: Timeless Black and White Ensembles</h1>
-        <p>
-          Welcome to our captivating world of black and white geometrical
-          fashion! Discover the timeless allure of minimalism and bold patterns,
-          where sleek lines and captivating shapes meet. Explore our curated
-          lookbook and redefine your wardrobe with striking monochromatic
-          statements that leave a lasting impression.
-        </p>
-        <div class="main-section_choose-season">
-          <h3>Choose your mood</h3>
-          <i
-            class="fa-solid fa-arrow-right fa-xl main-section_choose-season_arrow"
-          ></i>
+      <!-- I added here id, so that when you click on the logo it always brings you to the beginning of the page, similar to 'home' -->
+      <div class="main-section" id="start">
+        <div class="main-section_heading">
+          <h1>Classic Monochrome: Timeless Black and White Ensembles</h1>
+          <p>
+            Welcome to our captivating world of black and white geometrical
+            fashion! Discover the timeless allure of minimalism and bold
+            patterns, where sleek lines and captivating shapes meet. Explore our
+            curated lookbook and redefine your wardrobe with striking
+            monochromatic statements that leave a lasting impression.
+          </p>
+          <div class="main-section_choose-season">
+            <h3>Choose your mood</h3>
+            <i
+              class="fa-solid fa-arrow-right fa-xl main-section_choose-season_arrow"
+            ></i>
+          </div>
+          <div class="main-section_heading_anchor-wrapper">
+            <a class="main-section-anchor_spring" href=""
+              ><button>Blooming Spring</button></a
+            >
+            <a class="main-section-anchor_summer" href=""
+              ><button>Vibrant Summer</button></a
+            >
+            <a class="main-section-anchor_fall" href=""
+              ><button>Moody Fall</button></a
+            >
+            <a class="main-section-anchor_winter" href=""
+              ><button>Enchanting Winter</button></a
+            >
+          </div>
         </div>
-        <div class="main-section_heading_anchor-wrapper">
-          <a class="main-section-anchor_spring" href=""><button>Blooming Spring</button></a>
-          <a class="main-section-anchor_summer" href=""><button>Vibrant Summer</button></a>
-          <a class="main-section-anchor_fall" href=""><button>Moody Fall</button></a>
-          <a class="main-section-anchor_winter" href=""><button>Enchanting Winter</button></a>
+        <div class="main-section_photo">
+          <img
+            src="https://femina.wwmindia.com/content/2020/sep/fashion11601372194.jpg"
+            alt=""
+          />
         </div>
-      </div>
-      <div class="main-section_photo">
-        <img
-          src="https://femina.wwmindia.com/content/2020/sep/fashion11601372194.jpg"
-          alt=""
-        />
       </div>
     </div>
-</div>
     <!-- PHOTO SECTION -->
-
+    <div class="photo-wrapper"></div>
+    <div id="spring"></div>
+  <div id="summer"></div>
+<div id="fall"></div>
+<div id="winter"></div>
+</div>
     <!-- FOOTER -->
   </body>
 </html>
