@@ -132,11 +132,14 @@
 /* fashion pics styling */
 
 #spring-pics,
-#summer-pics {
+#summer-pics,
+#autumn-pics,
+#winter-pics {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 6rem;
 }
 #spring-pics img,
 #summer-pics img,
@@ -165,6 +168,14 @@
 #spring-pics .season-text {
   background-color: #6b705c;
   color: #ddbea9;
+}
+#autumn-pics .season-text {
+  background-color: #ffe8d6;
+  color: #6b705c;
+}
+#winter-pics .season-text {
+  background-color: #a5a58d;
+  color: #6b705c;
 }
 a {
   text-decoration: none;
