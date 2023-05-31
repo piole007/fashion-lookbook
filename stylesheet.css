@@ -11,6 +11,7 @@
   width: 100%;
   background-color: #ddbea9;
   display: flex;
+
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
@@ -127,6 +128,54 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* fashion pics styling */
+
+#spring-pics,
+#summer-pics,
+#autumn-pics,
+#winter-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 6rem;
+}
+#spring-pics img,
+#summer-pics img,
+#autumn-pics img,
+#winter-pics img {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.season-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 300px;
+  font-family: "Lexend";
+  font-size: 5vh;
+
+  border-radius: 50px;
+}
+#summer-pics .season-text {
+  background-color: #cb997e;
+  color: #4c4f42;
+}
+#spring-pics .season-text {
+  background-color: #6b705c;
+  color: #ddbea9;
+}
+#autumn-pics .season-text {
+  background-color: #ffe8d6;
+  color: #6b705c;
+}
+#winter-pics .season-text {
+  background-color: #a5a58d;
+  color: #6b705c;
 }
 a {
   text-decoration: none;
