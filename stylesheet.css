@@ -43,27 +43,19 @@ a {
   color: inherit;
   transition: color 0.3s;
 }
-
+.main-section_wrapper {
+  min-height: 100vh;
+  padding: 8rem 0 3rem 0;
+  margin: 0 6rem;
+}
 .main-section {
   display: flex;
   justify-content: space-between;
   /* I set width 100%, not 100vw, because:
     100vw causes horizontal overflow, because of the vertical scrollbar which up some of that space. 
     However percentages don’t include the width of the scrollbar, so it will automatically fit.  */
-  min-height: 100vh;
   background-color: transparent;
-  padding: 10rem 0 3rem 0;
-  margin: 0 6rem;
-  column-gap: 0.5rem;
-}
-
-.main-section_left {
-  width: 60%
-}
-.main-section_photo {
-  display: flex;
-  justify-content: flex-end;
-  width: 40%;
+  column-gap: 2rem;
 }
 
 .main-section_heading h1 {
@@ -80,7 +72,7 @@ a {
   padding-top: 5%;
   font-family: "Lexend";
   font-size: 20px;
-  line-height: 45px;
+  line-height: 2rem;
   color: #6b705c;
 }
 
@@ -121,7 +113,7 @@ a {
   cursor: pointer;
   border: none;
   background: none;
-  background-image: url("/Project-No-1_Fashion-Lookbook/pink-paint-brush-stroke.png");
+  background-image: url("./pink-paint-brush-stroke.png");
   background-size: cover;
   width: 230px;
   height: 60px;
@@ -134,13 +126,12 @@ a {
 .main-section_photo img {
   border-radius: 45%;
   object-fit: contain;
-  max-height: 70vh;
-  max-width: 100%;
+  height: 450px;
 }
 
 .parallax {
   /* The image used */
-  background-image: url("watercolor-background.jpg");
+  background-image: url("./watercolor-background.jpg");
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
