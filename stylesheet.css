@@ -52,7 +52,7 @@ a {
     However percentages don’t include the width of the scrollbar, so it will automatically fit.  */
   min-height: 100vh;
   background-color: transparent;
-  padding: 10rem 0 3rem 0;
+  padding: 8rem 0 3rem 0;
   margin: 0 6rem;
   column-gap: 0.5rem;
 }
@@ -80,7 +80,7 @@ a {
   padding-top: 5%;
   font-family: "Lexend";
   font-size: 20px;
-  line-height: 45px;
+  line-height: 2rem;
   color: #6b705c;
 }
 
