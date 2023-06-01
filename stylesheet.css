@@ -50,9 +50,9 @@ a {
   /* I set width 100%, not 100vw, because:
     100vw causes horizontal overflow, because of the vertical scrollbar which up some of that space. 
     However percentages don’t include the width of the scrollbar, so it will automatically fit.  */
-  min-height: 63%;
+  min-height: 100vh;
   background-color: transparent;
-  padding: 10rem 0 5rem 0;
+  padding: 10rem 0 3rem 0;
   margin: 0 6rem;
   column-gap: 0.5rem;
 }
@@ -134,7 +134,7 @@ a {
 .main-section_photo img {
   border-radius: 45%;
   object-fit: contain;
-  max-height: 90%;
+  max-height: 70vh;
   max-width: 100%;
 }
 
