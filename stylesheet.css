@@ -46,14 +46,24 @@ a {
 
 .main-section {
   display: flex;
-  width: 80%;
+  justify-content: space-between;
   /* I set width 100%, not 100vw, because:
     100vw causes horizontal overflow, because of the vertical scrollbar which up some of that space. 
     However percentages don’t include the width of the scrollbar, so it will automatically fit.  */
-  height: 63%;
+  min-height: 63%;
   background-color: transparent;
-  padding: 10% 10%;
-  column-gap: 5%;
+  padding: 10rem 0 5rem 0;
+  margin: 0 6rem;
+  column-gap: 0.5rem;
+}
+
+.main-section_left {
+  width: 60%
+}
+.main-section_photo {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
 }
 
 .main-section_heading h1 {
@@ -95,7 +105,7 @@ a {
   display: flex;
   justify-content: flex-start;
   margin-top: 35px;
-  column-gap: 30px;
+  column-gap: 10px;
   flex-wrap: wrap;
   row-gap: 10px;
   margin-left: -35px;
@@ -113,13 +123,19 @@ a {
   background: none;
   background-image: url("/Project-No-1_Fashion-Lookbook/pink-paint-brush-stroke.png");
   background-size: cover;
-  width: 250px;
+  width: 230px;
   height: 60px;
+}
+
+.main-section_heading_anchor-wrapper button:hover {
+  color: #393d2c;
 }
 
 .main-section_photo img {
   border-radius: 45%;
-  height: 90%;
+  object-fit: contain;
+  max-height: 90%;
+  max-width: 100%;
 }
 
 .parallax {
@@ -135,18 +151,18 @@ a {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
-  height: 15%;
+  min-height: 15%;
   background-color: transparent;
-  padding: 5% 10%;
+  padding: 3rem 6rem;
+  row-gap: 2rem;
 }
 
 .social-icons-section {
   display: flex;
   flex-direction: column;
-
-  width: 40%;
+  
 }
 
 .footer-logo {
@@ -180,6 +196,8 @@ a {
   justify-content: center;
   align-items: center;
   width: 40%;
+  min-width: 350px;
+  min-height: 135px;
   background-color: #ddbea9;
   border-radius: 90px;
   row-gap: 10px;
