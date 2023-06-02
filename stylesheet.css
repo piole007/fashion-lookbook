@@ -44,18 +44,29 @@ a {
   transition: color 0.3s;
 }
 .main-section_wrapper {
+  display:flex;
+  align-items: center;
   min-height: 100vh;
-  padding: 8rem 0 3rem 0;
-  margin: 0 6rem;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
 }
+
+.main-section_wrapper-about-us {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 6rem 0 5rem 0;
+  row-gap: 2rem;
+}
+
 .main-section {
   display: flex;
   justify-content: space-between;
-  /* I set width 100%, not 100vw, because:
-    100vw causes horizontal overflow, because of the vertical scrollbar which up some of that space. 
-    However percentages don’t include the width of the scrollbar, so it will automatically fit.  */
   background-color: transparent;
-  column-gap: 2rem;
+  column-gap: 3rem;
 }
 
 .main-section_heading h1 {
@@ -67,13 +78,27 @@ a {
   font-size: 60px;
   line-height: 70px;
   color: #4c4f42;
+  padding-bottom: 3%;
+}
+.about-us-heading {
+  padding-top: 5%;
+  background-color: transparent;
+  font-family: "Bodoni Moda";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 60px;
+  line-height: 70px;
+  color: #4c4f42;
+  text-align: center;
+  padding-bottom: 3%;
 }
 .main-section_heading p {
-  padding-top: 5%;
+  padding-top: 2%;
   font-family: "Lexend";
-  font-size: 20px;
+  font-size: 25px;
   line-height: 2rem;
   color: #6b705c;
+  text-align: justify;
 }
 
 .main-section_choose-season {
@@ -115,7 +140,7 @@ a {
   background: none;
   background-image: url("./pink-paint-brush-stroke.png");
   background-size: cover;
-  width: 230px;
+  width: 220px;
   height: 60px;
 }
 
@@ -126,7 +151,7 @@ a {
 .main-section_photo img {
   border-radius: 45%;
   object-fit: contain;
-  height: 450px;
+  height: 600px;
 }
 
 .parallax {
@@ -145,8 +170,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 15%;
+  width: 80%;
   background-color: transparent;
-  padding: 3rem 6rem;
+  margin: auto;
+  padding-bottom: 2rem;
   row-gap: 2rem;
 }
 
