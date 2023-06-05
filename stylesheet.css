@@ -420,9 +420,6 @@ a {
   .main-section_choose-season {
     display: none;
   }
-  .main-section_heading_anchor-wrapper {
-    display: none;
-  }
   .main-section_photo {
     padding-top: 2%;
   }
@@ -430,9 +427,6 @@ a {
 
 @media screen and (min-width: 900px) {
   .main-section_choose-season_phone {
-    display: none;
-  }
-  .main-section_heading_anchor-wrapper_phone {
     display: none;
   }
 }
@@ -489,7 +483,6 @@ a {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 910px) {
   .clothes-pic {
     display: none;
@@ -501,12 +494,3 @@ a {
     display: none;
   }
 }
-=======
-  @media  screen and (min-width: 910px) {
-    .clothes-pic_phone {
-      display: none
-    }
-
-  }
-
->>>>>>> main
