@@ -393,3 +393,31 @@ a {
     text-align: center;
 }
   }
+
+  @media screen and (max-width: 1120px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-icons-section {
+      align-items: center;
+      width: 80%;
+    }
+  
+    .social-icons-section p {
+      text-align: center;
+  }
+  }
+
+  @media  screen and (max-width: 910px) {
+    .clothes-pic {
+      display: none
+    }
+  }
+
+  @media  screen and (min-width: 910px) {
+    .clothes-pic_phone {
+      display: none
+    }
+  }
