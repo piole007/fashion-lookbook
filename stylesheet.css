@@ -19,6 +19,7 @@
 }
 .nav-bar img {
   height: 6rem;
+  cursor: pointer;
 }
 
 .nav-bar-menu {
@@ -34,7 +35,18 @@
   text-transform: uppercase;
 }
 .nav-bar-menu li {
-  margin: 3.5rem 3rem 0 0;
+  margin: 2rem 3rem 0 0;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  background-image: url("./pink-paint-brush-stroke.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.5rem;
+  width: 11rem;
+  justify-content: center;
 }
 .nav-bar-menu li:last-child {
   margin-right: 0;
