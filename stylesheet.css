@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.nav-bar-wrapper {
+.nav-bar-background {
   position: fixed;
   top: 0%;
   height: 6rem;
@@ -41,7 +41,7 @@
   text-transform: uppercase;
 }
 .nav-bar-menu li {
-  margin: 2rem 3rem 0 0;
+  margin: 2rem 3rem 0.5rem 0;
   display: flex;
   cursor: pointer;
   text-align: center;
@@ -68,19 +68,23 @@ a {
   transition: color 0.3s;
 }
 @media screen and (max-width: 768px) {
+  .nav-bar-background {
+    height: 8rem;
+    flex-wrap: nowrap;
+  }
   .nav-bar {
     width: 90%;
     left: 5%;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    align-items: center;
   }
   .nav-bar-menu {
-    margin-right: 1rem;
-    white-space: nowrap;
+    flex-direction: column;
+    margin: 0;
   }
   .nav-bar-menu li {
     margin-right: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
   }
 }
 .main-section_wrapper {
@@ -400,7 +404,7 @@ a {
     padding-top: 7rem;
   }
   .main-section_heading_anchor-wrapper {
-    column-gap: 2%
+    column-gap: 2%;
   }
 }
 
@@ -409,12 +413,12 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .main-section_heading h1, .main-section_heading p {
+  .main-section_heading h1,
+  .main-section_heading p {
     text-align: center;
-
   }
   .main-section_choose-season {
-    display: none
+    display: none;
   }
   .main-section_heading_anchor-wrapper {
     display: none;
@@ -426,13 +430,13 @@ a {
 
 @media screen and (min-width: 900px) {
   .main-section_choose-season_phone {
-    display: none
+    display: none;
   }
   .main-section_heading_anchor-wrapper_phone {
     display: none;
   }
 }
-  
+
 @media screen and (max-width: 360px) {
   .main-section_photo img {
     height: 300px;
@@ -447,7 +451,7 @@ a {
   }
 
   .subscribe-section {
-    min-width: 200px
+    min-width: 200px;
   }
 
   .subscribe-section h5 {
@@ -466,33 +470,33 @@ a {
 
   .social-icons-section p {
     text-align: center;
+  }
 }
+
+@media screen and (max-width: 1120px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media screen and (max-width: 1120px) {
-    .footer {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .social-icons-section {
-      align-items: center;
-      width: 80%;
-    }
-  
-    .social-icons-section p {
-      text-align: center;
-  }
+  .social-icons-section {
+    align-items: center;
+    width: 80%;
   }
 
-  @media  screen and (max-width: 910px) {
-    .clothes-pic {
-      display: none
-    }
+  .social-icons-section p {
+    text-align: center;
   }
+}
 
-  @media  screen and (min-width: 910px) {
-    .clothes-pic_phone {
-      display: none
-    }
+@media screen and (max-width: 910px) {
+  .clothes-pic {
+    display: none;
   }
+}
+
+@media screen and (min-width: 910px) {
+  .clothes-pic_phone {
+    display: none;
+  }
+}
