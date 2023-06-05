@@ -489,6 +489,7 @@ a {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 910px) {
   .clothes-pic {
     display: none;
@@ -500,3 +501,12 @@ a {
     display: none;
   }
 }
+=======
+  @media  screen and (min-width: 910px) {
+    .clothes-pic_phone {
+      display: none
+    }
+
+  }
+
+>>>>>>> main
