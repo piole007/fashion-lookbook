@@ -85,7 +85,6 @@ a {
 }
 .main-section_wrapper {
   display: flex;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -198,6 +197,35 @@ a {
 }
 
 .main-section_heading_anchor-wrapper button:hover {
+  color: #393d2c;
+}
+.main-section_heading_anchor-wrapper_phone {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 35px;
+  column-gap: calc(1px + 2vw);
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.main-section_heading_anchor-wrapper_phone button {
+  text-decoration: none;
+  font-family: "Lexend";
+  font-weight: 700;
+  font-size: calc(1rem + 0.390625vw);
+  line-height: 45px;
+  color: #6b705c;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  background-image: url("./pink-paint-brush-stroke.png");
+  background-size: cover;
+  width: 220px;
+  height: 60px;
+}
+
+.main-section_heading_anchor-wrapper_phone button:hover {
   color: #393d2c;
 }
 
@@ -388,6 +416,9 @@ a {
   .main-section_choose-season {
     display: none
   }
+  .main-section_heading_anchor-wrapper {
+    display: none;
+  }
   .main-section_photo {
     padding-top: 2%;
   }
@@ -396,6 +427,9 @@ a {
 @media screen and (min-width: 900px) {
   .main-section_choose-season_phone {
     display: none
+  }
+  .main-section_heading_anchor-wrapper_phone {
+    display: none;
   }
 }
   
@@ -433,4 +467,32 @@ a {
   .social-icons-section p {
     text-align: center;
 }
+  }
+
+  @media screen and (max-width: 1120px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-icons-section {
+      align-items: center;
+      width: 80%;
+    }
+  
+    .social-icons-section p {
+      text-align: center;
+  }
+  }
+
+  @media  screen and (max-width: 910px) {
+    .clothes-pic {
+      display: none
+    }
+  }
+
+  @media  screen and (min-width: 910px) {
+    .clothes-pic_phone {
+      display: none
+    }
   }
