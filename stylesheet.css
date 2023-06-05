@@ -67,6 +67,22 @@ a {
   color: inherit;
   transition: color 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    width: 90%;
+    left: 5%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .nav-bar-menu {
+    margin-right: 1rem;
+    white-space: nowrap;
+  }
+  .nav-bar-menu li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
 .main-section_wrapper {
   display: flex;
   display: flex;
