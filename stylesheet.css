@@ -2,38 +2,62 @@
   margin: 0;
   padding: 0;
 }
-
-.nav-bar {
+.nav-bar-wrapper {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0%;
   height: 6rem;
   width: 100%;
   background-color: #ddbea9;
-
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.nav-bar {
+  width: 80%;
+  margin: auto;
+  background-color: transparent;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 6rem;
+  position: fixed;
+  top: 0%;
+  left: 10%;
+  z-index: 2;
 }
 .nav-bar img {
   height: 6rem;
+  cursor: pointer;
 }
 
 .nav-bar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 0 6rem 0 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   font-family: "Lexend";
   color: #4c4f42;
   font-size: large;
   text-transform: uppercase;
 }
 .nav-bar-menu li {
-  margin: 3.5rem 6rem 0 0;
+  margin: 2rem 3rem 0 0;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  background-image: url("./pink-paint-brush-stroke.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.5rem;
+  width: 11rem;
+  justify-content: center;
 }
+.nav-bar-menu li:last-child {
+  margin-right: 0;
+}
+
 .nav-bar-menu li:hover {
   color: #6b705c;
   cursor: pointer;
@@ -43,8 +67,24 @@ a {
   color: inherit;
   transition: color 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    width: 90%;
+    left: 5%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .nav-bar-menu {
+    margin-right: 1rem;
+    white-space: nowrap;
+  }
+  .nav-bar-menu li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
 .main-section_wrapper {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,7 +94,7 @@ a {
 }
 
 .main-section_wrapper-about-us {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
@@ -157,6 +197,35 @@ a {
 }
 
 .main-section_heading_anchor-wrapper button:hover {
+  color: #393d2c;
+}
+.main-section_heading_anchor-wrapper_phone {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 35px;
+  column-gap: calc(1px + 2vw);
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.main-section_heading_anchor-wrapper_phone button {
+  text-decoration: none;
+  font-family: "Lexend";
+  font-weight: 700;
+  font-size: calc(1rem + 0.390625vw);
+  line-height: 45px;
+  color: #6b705c;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  background-image: url("./pink-paint-brush-stroke.png");
+  background-size: cover;
+  width: 220px;
+  height: 60px;
+}
+
+.main-section_heading_anchor-wrapper_phone button:hover {
   color: #393d2c;
 }
 
@@ -347,6 +416,9 @@ a {
   .main-section_choose-season {
     display: none
   }
+  .main-section_heading_anchor-wrapper {
+    display: none;
+  }
   .main-section_photo {
     padding-top: 2%;
   }
@@ -355,6 +427,9 @@ a {
 @media screen and (min-width: 900px) {
   .main-section_choose-season_phone {
     display: none
+  }
+  .main-section_heading_anchor-wrapper_phone {
+    display: none;
   }
 }
   
@@ -420,4 +495,6 @@ a {
     .clothes-pic_phone {
       display: none
     }
+
   }
+
