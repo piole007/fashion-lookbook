@@ -44,7 +44,7 @@ a {
   transition: color 0.3s;
 }
 .main-section_wrapper {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@ a {
 }
 
 .main-section_wrapper-about-us {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
@@ -331,7 +331,7 @@ a {
     padding-top: 7rem;
   }
   .main-section_heading_anchor-wrapper {
-    column-gap: 2%
+    column-gap: 2%;
   }
 }
 
@@ -340,12 +340,12 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .main-section_heading h1, .main-section_heading p {
+  .main-section_heading h1,
+  .main-section_heading p {
     text-align: center;
-
   }
   .main-section_choose-season {
-    display: none
+    display: none;
   }
   .main-section_photo {
     padding-top: 2%;
@@ -354,10 +354,10 @@ a {
 
 @media screen and (min-width: 900px) {
   .main-section_choose-season_phone {
-    display: none
+    display: none;
   }
 }
-  
+
 @media screen and (max-width: 360px) {
   .main-section_photo img {
     height: 300px;
@@ -372,7 +372,7 @@ a {
   }
 
   .subscribe-section {
-    min-width: 200px
+    min-width: 200px;
   }
 
   .subscribe-section h5 {
@@ -391,33 +391,34 @@ a {
 
   .social-icons-section p {
     text-align: center;
+  }
 }
+
+@media screen and (max-width: 1120px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media screen and (max-width: 1120px) {
-    .footer {
-      flex-direction: column;
-      align-items: center;
-    }
   
-    .social-icons-section {
-      align-items: center;
-      width: 80%;
-    }
-  
-    .social-icons-section p {
-      text-align: center;
-  }
+  .social-icons-section {
+    align-items: center;
+    width: 80%;
   }
 
-  @media  screen and (max-width: 910px) {
-    .clothes-pic {
-      display: none
-    }
+  .social-icons-section p {
+    text-align: center;
   }
+}
 
-  @media  screen and (min-width: 910px) {
-    .clothes-pic_phone {
-      display: none
-    }
+@media screen and (max-width: 910px) {
+  .clothes-pic {
+    display: none;
   }
+}
+
+@media screen and (min-width: 910px) {
+  .clothes-pic_phone {
+    display: none;
+  }
+}
